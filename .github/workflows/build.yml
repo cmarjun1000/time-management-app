@@ -1,0 +1,22 @@
+name: Build
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+jobs:
+  testJob:
+    name: Testing_Job
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install dependencies
+        run: npm install
+      - name: Linter execution
+        run: npm run lint
