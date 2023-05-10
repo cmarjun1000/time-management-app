@@ -10,8 +10,8 @@ module.exports = {
         }
     },
     extends: [
-        'plugin:react/recommeded',
-        'plugin:react-hooks/recommeded',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:import/errors',
         'plugin:import/warnings',

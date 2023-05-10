@@ -13,5 +13,5 @@ const Template: Story<ButtonProps> = (args: JSX.IntrinsicAttributes) => (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'Primary Button'
+  label: 'Primary Button',
 };
